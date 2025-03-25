@@ -20,25 +20,6 @@ export async function getServerSideProps(context) {
     };
   }
 
-  // Redirect to a subpage if hitting a particular domain
-  if (host === 'test-b2b.petermenocal.com') {
-    return {
-      redirect: {
-        destination: '/b2b',
-        permanent: false,
-      },
-    };
-  }
-  // Redirect to a subpage if hitting a particular domain
-  if (host === 'test-b2c.petermenocal.com') {
-    return {
-      redirect: {
-        destination: '/b2c',
-        permanent: false,
-      },
-    };
-  }
-
   return {
     props: {
       storeConfig,
