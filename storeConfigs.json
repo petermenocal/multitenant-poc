@@ -2,31 +2,31 @@
     "b2c": {
       "name": "Public Store",
       "type": "Public",
-      "description": "This is the public store for individual customers.",
+      "description": "This is the public store for individual customers. Settings, content, and styles are different from the b2b store (and set via json)",
       "domains": ["test-b2c.petermenocal.com"],
       "branding": {
         "backgroundColor": "#ffffff",
         "textColor": "#000000"
       },
       "navigation": [
-        { "label": "Home", "link": "/" },
-        { "label": "Products", "link": "/products" },
-        { "label": "Contact", "link": "/contact" }
+        { "label": "Dynamic Nav A:1", "link": "/" },
+        { "label": "Dynamic Nav A:2", "link": "/" },
+        { "label": "Dynamic Nav A:3", "link": "/" }
       ]
     },
     "b2b": {
       "name": "B2B Store",
       "type": "B2B",
-      "description": "This is the private B2B store.",
+      "description": "This is the private B2B store. Settings, content, and styles are different from the public store (and set via json).",
       "domains": ["test-b2b.petermenocal.com"],
       "branding": {
         "backgroundColor": "#000",
         "textColor": "#ffff"
       },
       "navigation": [
-        { "label": "Dashboard", "link": "/dashboard" },
-        { "label": "Products", "link": "/products" },
-        { "label": "Support", "link": "/support" }
+        { "label": "Dynamic Nav B:1", "link": "/" },
+        { "label": "Dynamic Nav B:2", "link": "/" },
+        { "label": "Dynamic Nav B:3", "link": "/" }
       ]
     }
   }
