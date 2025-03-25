@@ -22,21 +22,16 @@ export async function getServerSideProps(context) {
 
   // Redirect to a subpage if hitting a particular domain
   if (host === 'test-b2c.petermenocal.com') {
-    return {
-      redirect: {
-        destination: '/b2c',
-        permanent: false,
-      },
-    };
+    context.res.writeHead(302, { Location: '/b2c' });
+    context.res.end();
+    return { props: {} };
   }
   if (host === 'test-b2b.petermenocal.com') {
-    return {
-      redirect: {
-        destination: '/b2b',
-        permanent: false,
-      },
-    };
+    context.res.writeHead(302, { Location: '/b2b' });
+    context.res.end();
+    return { props: {} };
   }
+
   return {
     props: {
       storeConfig,
