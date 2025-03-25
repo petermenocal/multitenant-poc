@@ -2,7 +2,7 @@
     "publicstore": {
       "name": "Public Store",
       "type": "Public",
-      "description": "This is the public store for individual customers.",
+      "description": "This is the public store for individual customers. Config via json",
       "branding": {
         "backgroundColor": "#ffffff",
         "textColor": "#000000"
@@ -16,10 +16,10 @@
     "b2bstore": {
       "name": "B2B Store",
       "type": "B2B",
-      "description": "This is the private B2B store.",
+      "description": "This is the private B2B store. Config via json",
       "branding": {
-        "backgroundColor": "#f0f0f0",
-        "textColor": "#333333"
+        "backgroundColor": "#000",
+        "textColor": "#fff"
       },
       "navigation": [
         { "label": "Dashboard", "link": "/dashboard" },
