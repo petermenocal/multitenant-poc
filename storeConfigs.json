@@ -2,7 +2,8 @@
     "publicstore": {
       "name": "Public Store",
       "type": "Public",
-      "description": "This is the public store for individual customers. Config via json",
+      "description": "This is the public store for individual customers.",
+      "domains": ["test-b2c.petermenocal.com"],
       "branding": {
         "backgroundColor": "#ffffff",
         "textColor": "#000000"
@@ -16,10 +17,11 @@
     "b2bstore": {
       "name": "B2B Store",
       "type": "B2B",
-      "description": "This is the private B2B store. Config via json",
+      "description": "This is the private B2B store.",
+      "domains": ["test-b2b.petermenocal.com"],
       "branding": {
-        "backgroundColor": "#000",
-        "textColor": "#fff"
+        "backgroundColor": "#f0f0f0",
+        "textColor": "#333333"
       },
       "navigation": [
         { "label": "Dashboard", "link": "/dashboard" },
