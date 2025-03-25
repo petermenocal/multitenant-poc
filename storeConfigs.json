@@ -1,0 +1,30 @@
+{
+    "publicstore": {
+      "name": "Public Store",
+      "type": "Public",
+      "description": "This is the public store for individual customers.",
+      "branding": {
+        "backgroundColor": "#ffffff",
+        "textColor": "#000000"
+      },
+      "navigation": [
+        { "label": "Home", "link": "/" },
+        { "label": "Products", "link": "/products" },
+        { "label": "Contact", "link": "/contact" }
+      ]
+    },
+    "b2bstore": {
+      "name": "B2B Store",
+      "type": "B2B",
+      "description": "This is the private B2B store.",
+      "branding": {
+        "backgroundColor": "#f0f0f0",
+        "textColor": "#333333"
+      },
+      "navigation": [
+        { "label": "Dashboard", "link": "/dashboard" },
+        { "label": "Products", "link": "/products" },
+        { "label": "Support", "link": "/support" }
+      ]
+    }
+  }
