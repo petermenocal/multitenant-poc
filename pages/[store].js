@@ -3,6 +3,7 @@ import path from 'path';
 
 export async function getServerSideProps(context) {
   const { store } = context.params;
+  const host = context.req.headers.host;
 
   // Load the store configurations from the JSON file
   const configPath = path.join(process.cwd(), 'storeConfigs.json');
@@ -19,6 +20,23 @@ export async function getServerSideProps(context) {
     };
   }
 
+  // Redirect to a subpage if hitting a particular domain
+  if (host === 'test-b2c.petermenocal.com') {
+    return {
+      redirect: {
+        destination: '/b2c',
+        permanent: false,
+      },
+    };
+  }
+  if (host === 'test-b2b.petermenocal.com') {
+    return {
+      redirect: {
+        destination: '/b2b',
+        permanent: false,
+      },
+    };
+  }
   return {
     props: {
       storeConfig,
