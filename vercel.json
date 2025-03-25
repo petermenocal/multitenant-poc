@@ -1,14 +1,24 @@
 {
-    "rewrites": [
-      {
-        "source": "/:path",
-        "has": [
-          {
-            "type": "host",
-            "value": "test-b2b.petermenocal.com"
-          }
-        ],
-        "destination": "/b2b"
-      }
-    ]
-  }
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "test-b2c.petermenocal.com"
+        }
+      ],
+      "destination": "/b2c"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "test-b2b.petermenocal.com"
+        }
+      ],
+      "destination": "/b2b"
+    }
+  ]
+}
