@@ -20,8 +20,8 @@
       "description": "This is the private B2B store.",
       "domains": ["test-b2b.petermenocal.com"],
       "branding": {
-        "backgroundColor": "#f0f0f0",
-        "textColor": "#333333"
+        "backgroundColor": "#000",
+        "textColor": "#ffff"
       },
       "navigation": [
         { "label": "Dashboard", "link": "/dashboard" },
