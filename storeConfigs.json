@@ -1,5 +1,5 @@
 {
-    "publicstore": {
+    "b2c": {
       "name": "Public Store",
       "type": "Public",
       "description": "This is the public store for individual customers.",
@@ -14,7 +14,7 @@
         { "label": "Contact", "link": "/contact" }
       ]
     },
-    "b2bstore": {
+    "b2b": {
       "name": "B2B Store",
       "type": "B2B",
       "description": "This is the private B2B store.",
