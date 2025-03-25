@@ -8,7 +8,7 @@
           "value": "test-b2c.petermenocal.com"
         }
       ],
-      "destination": "/b2cstore/$1"
+      "destination": "/publicstore/$1"
     },
     {
       "source": "/(.*)",
